@@ -1,0 +1,20 @@
+.runing{
+    background-color: #004e41;
+    padding: 7px;
+    span{
+        color: #131313;
+        font-size: 48px;
+        font-family: 'BlackProText';
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 768px){
+    .runing{
+        span{
+            font-size: 32px;
+        }
+    }
+}

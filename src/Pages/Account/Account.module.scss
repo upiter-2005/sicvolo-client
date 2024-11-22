@@ -1,0 +1,72 @@
+.accountWrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    .left{
+        width: 200px;
+        button{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #F9FFFE;
+            font-size: 20px;
+            line-height: 22.8px; 
+            letter-spacing: -0.4px;
+            margin-bottom: 24px;
+            text-align: left;
+            display: block;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+    .right{
+        width: 894px;
+        padding-bottom: 24px;
+        .back{
+            display: none;
+        }
+    }
+}
+@media(max-width: 768px){
+    .accountWrapper{
+        width: 200%;
+        left: 0;
+        transition: all .3s ease;
+        &.swipe{
+           transform: translate(-50%, 0)!important;
+        }
+        .left, .right{
+            width: 50%;
+            .back{
+                display: block;
+                width: 92%;
+                text-align: left;
+                img{
+                    margin-right: 8px;
+                }
+            }
+        }
+        .right{
+            padding-left: 10px;
+            width: calc(50% - 20px);
+        }
+        .left{
+            button{
+                margin-left: 20px;
+                padding-bottom: 24px;
+                margin-bottom: 24px;
+                border-bottom: 1px solid #fff;
+                width: 90%;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

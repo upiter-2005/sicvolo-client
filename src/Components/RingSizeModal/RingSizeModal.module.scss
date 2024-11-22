@@ -1,0 +1,109 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all .3s ease;
+    z-index: 1000;
+    &.active{
+        transform: scale(1);
+    }
+    &__content{
+        padding: 102px 64px;
+        background: #004E41;
+        max-width: 528px;
+        width: 100%;
+        position: relative;
+        .closeModal{
+            position: absolute;
+            right: 64px;
+            top: 102px;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+        }
+        h2{
+            font-weight: 400;
+            font-size: 32px;
+            text-align: left;
+            margin-bottom: 48px;
+            margin-top: 0;
+        }
+        .sizesWrapper{
+            max-height: 540px;
+            overflow-y: scroll ;
+        }
+       .titles{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        span{
+            width: 115px;
+            font-weight: 500;
+            color: #B9BBBF;
+            text-align: left;
+            &:first-child{
+                width: 80px;
+            }
+        }
+       }
+       .sizesRow{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding: 6px 0;
+        span{
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 115px;
+            &:first-child{
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                line-height: 22px;
+                border-radius: 4px;
+                text-align: center;
+                padding: 12px 16px;
+                border: 1px solid #C3C3C3;
+            }
+        }
+       }
+        
+    }
+   
+   
+}
+
+@media (max-width: 768px){
+    .modal{
+        
+       
+        &__content{
+            padding: 32px 12px;
+            .closeModal{
+                position: absolute;
+                right: 0;
+                top: 28px;
+                width: 38px;
+                height: 48px;
+                cursor: pointer;
+            }
+        }
+    }    
+}

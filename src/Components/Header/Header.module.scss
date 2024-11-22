@@ -1,0 +1,89 @@
+$accent: #0a5447;
+.h1{
+    font-family: "BlackProDisplay";
+    font-weight: 200;
+    font-size: 50px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 14px;
+    gap: 35px;
+}
+.header_left{
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    width: 71px;
+    img{
+        width: 100%;
+    }
+}
+.mobMnu{
+    display: none;
+    margin-right: 20px;
+}
+.headerLinks{
+    display: flex;
+    // width: 280px;
+    justify-content: flex-end;
+    align-items: center;
+    
+    a{
+        margin-left: 24px;
+    }
+    .cartHeaderWrap{
+        margin-left: 24px;
+        margin-right: 18px;
+        position: relative;
+        cursor: pointer;
+        span{
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            border-radius: 50%;
+            display: block;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            line-height: 15px;
+            background-color: $accent;
+            color: #fff;
+            font-size: 10px;
+        }
+    }
+}
+
+@media(max-width:992px){
+    .header{
+        img{
+            width: 26px;
+        }
+    }
+    .header_left{
+        width: 33%;
+    }
+    .logo{
+        width: 66px;
+        img{
+            width: 100%;
+        }
+    }
+    .mobMnu{
+        display: block;
+    }
+    .headerLinks{
+        width: 33%;
+        .cartHeaderWrap{
+            margin-left: 12px;
+            margin-right: 14px;
+        }
+    }
+    .header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

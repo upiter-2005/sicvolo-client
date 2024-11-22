@@ -1,0 +1,26 @@
+.btn{
+    background-color: #004E41!important;
+    color: #f0f0f0!important;
+    font-size: 14px;
+    margin: 5px;
+}
+.btn_decline{
+    font-size: 14px;
+}
+.Cookie_text{
+    margin-bottom: 0;
+    a{
+        color: #02b295!important;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+@media (max-width: 768px){
+    .Cookie_wraper{
+        height: 150px;
+        overflow: auto;
+
+    }
+}
+
+

@@ -1,0 +1,89 @@
+.product-images-slider {
+    width: 100%;
+    position: relative;
+    .swiper-slide {
+        padding-top: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+        color: #000;
+    }
+
+    .swiper-button-next {
+        right: 0;
+        color: #000;
+    }
+}
+.swiper-vertical{
+    //left: 0!important;
+}
+.product-images-slider-thumbs {
+    width: 90px!important;
+    position: absolute!important;
+    top: 0!important;
+    left: -102px!important;
+    margin: 0!important;
+    .swiper-slide {
+        height: 77px!important;
+        cursor: pointer;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-thumb-active {
+            //border-color: #ff0000;
+        }
+    }
+
+    &-wrapper {
+        width: 90px;
+        padding-top: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+@media(max-width: 992px){
+    .product-images-slider-thumbs{
+        display: none!important;
+    }
+    .product-images-slider{
+        padding-bottom: 20px!important;
+    }
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+        position: relative;
+        top: 20px!important;
+        z-index: 40;
+        .swiper-pagination-bullet{
+            background-color: #fff;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #C3C3C3;
+            background-color: transparent;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #004E41;
+            border: 1px solid #004E41;
+        }
+        
+       }
+}

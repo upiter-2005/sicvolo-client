@@ -1,0 +1,104 @@
+.catalogWrapper{
+    padding: 16px 0 64px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    h1{
+        font-family: 'BlackProText';
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 48px;
+        margin-bottom:18px;
+        margin-top: 32px;
+        color: #F9FFFE;
+    }
+    .Productfilter{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        &_box{
+            width: 100%;
+        }
+        .Productfilter_first_p{
+            margin-bottom: 30px;
+        }
+        p{
+            margin-bottom: 6px;
+            font-size: 20px;
+            color: #c3c3c3;
+        }
+    }
+    .showMoreWrap{
+        width: 100%;
+        text-align: center;
+        margin-top: 12px;
+        button{
+            background-color: #004E41;
+            border: none;
+            outline: none;
+            color: #f9fffe;
+            padding: 16px;
+            font-size: 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            max-width: 280px;
+            width: 100%;
+            transition: all .4s ease;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+    
+    .productList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        div{
+            margin: 9px 9px 44px;
+        }
+    }
+}
+
+@media(max-width: 992px){
+    .catalogWrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+           .Productfilter{
+            width: 100%;
+            display: flex;
+           
+            &_box{
+                width: 100%;
+                overflow-x: scroll;
+                display: flex;
+                &::-webkit-scrollbar {
+                    display: none;
+                  }
+                  
+                  /* Track */
+                  &::-webkit-scrollbar-track {
+                    display: none;
+                  }
+                  
+                  /* Handle */
+                  &::-webkit-scrollbar-thumb {
+                    display: none;
+                  }
+            }
+            p{
+                margin-bottom: 24px!important;
+                font-size: 20px;
+            }
+        }
+        .productList{
+            div{
+                margin: 9px auto 32px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,90 @@
+.profile{
+    text-align: left;
+    h2{
+        font-family: 'BlackProText';
+        font-size: 48px;
+        color: #F9FFFE;
+        font-weight: 200;
+        letter-spacing: -0.96px;
+        text-transform: uppercase;
+        margin-top: 0;
+        text-align: left;
+    }
+    &_item{
+        display: flex;
+        align-items: center;
+        width: 284px;
+        input{
+            width: 100%;
+            flex: 1;
+            background-color: transparent;
+            border: none ;
+            outline: none ;
+            border-bottom: 1px solid #F9FFFE;
+            color: #C3C3C3;
+            line-height: 18px;
+            padding-bottom: 13px;
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+        .pureInput{
+            border: none;
+                flex: 1;
+                background-color: transparent;
+                border: none ;
+                outline: none ;
+                color: #fff;
+                line-height: 18px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                font-size: 18px;
+            
+        }
+        button{
+            display: flex;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #C3C3C3;
+            font-size: 20px;
+            line-height: 22.8px; 
+            letter-spacing: -0.4px;
+            text-align: left;
+            display: block;
+            margin-right: 24px;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover{
+                opacity: 0.6;
+            }
+            img{
+                position: relative;
+                top: 4px;
+                margin-right: 12px;
+            }
+        }
+        
+    }
+    .saveBtn{
+        margin-top: 48px;
+        background-color: #004E41;
+        width: 100%;
+        border-radius: 4px;
+        color: #F9FFFE;
+        font-size: 20px;
+        outline: none;
+        border: none;
+        font-weight: 400;
+        line-height: 22.8px;
+        letter-spacing: -0.4px;
+        text-align: center;
+        padding: 16px;
+        max-width: 280px;
+        width: 100%;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}

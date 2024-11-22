@@ -1,0 +1,193 @@
+$accent: #0a5447;
+.footerWrap{
+    padding: 96px 0;
+    display: flex;
+    justify-content: space-between;
+    .footer_col_1{
+        width: 180px;
+        text-align: left;
+        .follow{
+            margin-top: 96px;
+            a{
+                margin-right: 8px;
+            }
+        }
+    }
+    .footer_col_2{
+        width: 452px;
+        display: flex;
+        justify-content: space-between;
+        gap: 38px;
+        .footer_column{
+            p{
+                margin-bottom: 12px;
+                text-align: left;
+                color: #F9FFFE;
+                font-size: 18px;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            li{
+                padding-top: 20px;
+                text-align: left;
+                a{
+                    color: #C3C3C3;
+                    text-align: left;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .footer_col_3{
+        width: 303px;
+        p{
+            margin-bottom: 12px;
+            text-align: right;
+            color: #F9FFFE;
+            font-size: 18px;
+            margin-bottom: 16px;
+            line-height: 20px;
+        }
+
+        .subscribe_block{
+            padding: 10px 20px;
+            border-radius: 24px;
+            width: 100%;
+            border: 1px solid $accent; 
+            position: relative;
+            margin-bottom: 30px;
+            img{
+                position: absolute;
+                left: 20px;
+                top: 10px;
+                width: 20px;
+            }
+            input{
+                width: 100%;
+                background-color: transparent;
+                padding: 0;
+                margin: 0;
+                border: none;
+                outline: none;
+                padding-left: 28px;
+                color: #c3c3c3;
+                &::placeholder{
+                    color: #c3c3c3;
+                    font-size: 16px; 
+                }
+            }
+        }
+        .copy{
+            color: #fff;
+            opacity: 0.6;
+            font-size: 12px;
+            text-align: left;
+        }
+       
+    }
+  
+}
+.copyMob{
+    display: none;
+}
+@media(max-width: 992px){
+    .copy{
+        display: none;
+    }
+    
+    .footerWrap{
+        flex-direction: column;
+        padding: 64px 20px ;
+        .copyMob{
+            order: 4;
+            display: block;
+            text-align: left;
+            opacity: 0.6;
+            font-size: 12px;
+        }
+        .footer_col_1{
+            order: 1;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            .follow{
+                margin-top: 0;
+                p{
+                    display: none;
+                }
+                a{
+                    margin-right: 8px;
+                }
+            }
+        }
+        .footer_col_2{
+            order: 3;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .footer_column{
+                width: 50%;
+                p{
+                    text-align: left;
+               
+                    font-size: 18px;
+                }
+                ul{
+                    margin-bottom: 60px;
+                }
+                li{
+                    padding-top: 12px;
+                    text-align: left;
+                    
+                }
+            }
+        }
+        .footer_col_3{
+            order: 2;
+            width: 100%;
+            max-width: 303px;
+            margin-bottom: 48px;
+            p{
+                text-align: left;
+               
+            }
+    
+            .subscribe_block{
+                padding: 10px 20px;
+                border-radius: 24px;
+                width: 100%;
+                border: 1px solid $accent; 
+                position: relative;
+                margin-bottom: 30px;
+                img{
+                    position: absolute;
+                    left: 20px;
+                    top: 10px;
+                    width: 20px;
+                }
+                input{
+                    width: 100%;
+                    background-color: transparent;
+                    padding: 0;
+                    margin: 0;
+                    border: none;
+                    outline: none;
+                    padding-left: 28px;
+                    color: #c3c3c3;
+                    &::placeholder{
+                        color: #c3c3c3;
+                        font-size: 16px; 
+                    }
+                }
+            }
+           
+        }
+    }
+}

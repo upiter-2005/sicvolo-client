@@ -1,0 +1,46 @@
+.mainNav{
+    padding: 32px 0;
+    max-width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(195, 195, 195, 0.40);
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0 16px;
+        }
+    }
+    .navLink{
+        font-size: 20px;
+        letter-spacing: -.4px;
+        color: #f9fffe;
+        position: relative;
+        display: inline-block;
+        padding: 10px 16px;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: all .8s ease;
+        }
+        &:hover::before{
+            content: url(../../../public/img/hoverEl.svg);
+            opacity: 1;
+            transition: all .8s ease;
+        }
+    }
+}
+
+@media(max-width: 840px){
+    
+ .mainNav{
+    display: none;
+ }
+    
+}

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+
+/* Style the accordion section */
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  
+  color: #fff;
+  cursor: pointer;
+  padding: 20px 32px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  border-top: 1px solid rgba(195, 195, 195, 0.40);
+  transition: background-color 0.3s ease;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active {
+  .accordion__title{
+    color: #006756;
+  }
+}
+
+/* Style the accordion content title */
+.accordion__title {
+  font-weight: 400;
+  font-size: 20px;
+  color: #c3c3c3;
+  text-align: left;
+  margin-bottom: 0;
+  span{
+    img{
+      translate: rotate(0);
+      transition: all .3s ease;
+      .rotated{
+        translate: rotate(180deg);
+      }
+    }
+    
+  }
+}
+.accordion__title_active{
+    color: #c3c3c3;
+}
+/* Style the accordion chevron icon */
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+  color: #C3C3C3;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  line-height: 24px;
+  
+}
+
+/* Style the accordion content text */
+.accordion__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding:  19px 20px 0;
+
+  p{
+    margin-top: 0;
+  }
+}
+@media(max-width: 992px){
+  .accordion__section {
+    
+    padding-bottom: 32px;
+  }
+  .accordion__title{
+    line-height: 22px;
+  }
+  .accordion__text {
+   
+    font-size: 16px;
+    padding:  19px 0 0;
+    line-height: 24px;
+    p{
+      margin-top: 0;
+    }
+  }
+  .accordion {
+  
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    border-top: 1px solid rgba(195, 195, 195, 0.40);
+    transition: background-color 0.3s ease;
+  }
+}

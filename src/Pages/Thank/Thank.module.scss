@@ -1,0 +1,119 @@
+.NotFound{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 100%;
+   
+    .NotFoundWrapper{
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        margin: 24px auto;
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+        .left{
+            order: 1;
+            text-align: left;
+            max-width: 630px;
+            p{
+                color:#F9FFFE;
+                font-family: 'BlackProDisplay';
+                font-style: italic;
+                font-weight: 500;
+                font-size: 64px;
+                line-height: normal;
+                text-transform: uppercase;
+                margin: 0 0 10px;
+            }
+            span{
+                color: #C3C3C3;
+                line-height: 24px;
+                display: block;
+                margin-bottom: 32px;
+            }
+            .secondTitle{
+                position: relative;
+                left: 170px;
+                z-index: 10;
+                margin-bottom: 36px;
+                img{
+                    position: absolute;
+                    right: 0;
+                    top: -20px;
+                    z-index: -1;
+                }
+            }
+            .homeBtn{
+                background-color: transparent;
+                color: #fff;
+                padding: 16px;
+                font-size: 20px;
+                letter-spacing: -.4px;
+                border-radius: 4px;
+                width: 280px;
+                display: block;
+                text-align: center;
+                border: 1px solid #004E41;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+        .right{
+            order: 2;
+            flex: 1;
+            display: flex;
+            position: relative;
+            justify-content: flex-end;
+            img{
+                max-width: 575px;
+            }
+         
+        }
+    }
+}
+
+@media(max-width: 992px){
+    .NotFound{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        .NotFoundWrapper{
+            flex-direction: column;
+            flex-wrap: wrap;
+            .left{
+                order: 2!important;
+                margin-bottom: 260px;
+                p{
+                    font-size: 32px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                span{
+                    padding-left: 20px;
+                }
+                .homeBtn{
+                    width: 95%;
+                    margin: 0 auto;
+                }
+                .secondTitle{
+                    left: 0;;
+                    text-align: right;
+                    img{
+                        position: absolute;
+                        right: -20px;
+                        top: -20px;
+                        width: 140px;
+                    }
+                }
+            }
+            .right{
+                order: 1!important;
+                img{
+                    width: 95%;
+                    margin: 12px auto 32px;
+                }
+            }
+        }
+    }
+    
+}

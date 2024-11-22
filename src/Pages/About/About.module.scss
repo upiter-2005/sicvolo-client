@@ -1,0 +1,497 @@
+.about_1{
+    // margin-top: 64px;
+    background-image: url('../../../public/img/aboutFon.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
+    .absImg{
+        display: none;;
+    }
+    &_img{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .about1_row{
+        padding-left: 76px;
+        position: relative;
+        left: 50%;
+        padding-top: 82px;
+        max-width: 470px;
+        width: 100%;
+        text-align: left;
+        &_breadcrumb{
+            margin-bottom: 10px;
+            color: #C3C3C3;
+            a{
+                color: #C3C3C3;
+            }
+        }
+        .text{
+            max-width: 306px;
+            position: relative;
+            z-index: 10;
+            color: #C3C3C3;
+            font-size: 20px;
+            letter-spacing: -.4px;
+            padding-bottom: 6px;
+            margin-bottom: 0;
+        }
+    }
+    .about_title_1{
+        margin-top: 34px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        color: #F9FFFE;
+        text-align: left;
+        font-family: 'BlackProDisplay';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 64px;
+        text-transform: uppercase;
+        position: relative;
+        left: -94px;
+        z-index: 10;
+    }
+    .about_title_2{
+        margin-top: 14px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        color: #F9FFFE;
+        text-align: left;
+        font-family: 'BlackProDisplay';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 64px;
+        text-transform: uppercase;
+        position: relative;
+        left: 18px;
+        z-index: 10;
+    }
+    .about_ring_1{
+        position: absolute;
+        right: 0;
+        top: 45%;
+        transform: translate(0, -50%);
+    }
+
+}
+
+.about_2{
+    overflow: hidden;
+    background-color: #c3c3c3;
+    padding: 120px  0 139px;
+    width: 100%;
+    position: relative;
+    .about_2_img1{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .about_2_img2{
+        position: absolute;
+        bottom: 139px;
+        left: -140px;
+    }
+    .about_2_img2_mob{
+        display: none;
+    }
+    .about2_row{
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        .about2_row_wrapper{
+            max-width: 997px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            .bigText{
+                width: 100%;
+                position: relative;
+                right: 0;
+                text-transform: uppercase;
+                text-align: left;
+                color: #004E41;
+                font-size: 40px;
+                font-weight: 200;
+                font-family: 'BlackProText';
+                line-height: 64px;
+                margin-bottom: 48px;
+                span{
+                    font-family: 'BlackProDisplay';
+                    font-style: italic;
+                    font-weight: 500;
+                   
+                }
+                .bigTextImg{
+                    position: relative;
+                    top: 10px;
+                    left: 14px;
+                    width: 95px;
+                }
+            }
+            .about_text1{
+                text-align: left;
+                max-width: 410px;
+                width: 100%;
+                margin-right: 78px;
+                opacity: 1;
+                p{
+                    color: #131313;
+                    line-height: 24px;
+                }
+            }
+            .about_text2{
+                text-align: left;
+                max-width: 370px;
+                width: 100%;
+                margin-right: 78px;
+                opacity: 1;
+                p{
+                    color: #131313;
+                    line-height: 24px;
+                }
+            }
+        }
+       
+        
+    }
+}
+
+.about_3{
+    padding: 136px 0 106px;
+    position: relative;
+    .bgc{
+        position: absolute;
+        height: 886px;
+        max-width: 650px;
+        width: 50%;
+        background-image: url(../../../public/img/pair.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left: 55%;
+        bottom: 0;
+        z-index: -1;
+    }
+    .about_3_img1{
+        max-width: 1330px;
+        width: 100%;
+        text-align: left;
+       // height: 364px;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 64px;
+        .about_3_abs{
+            // position: absolute;
+            // left: 102px;
+            // top: -36px;
+        }
+        // .about_3_sheap{
+        //     width: 100%;
+        //     height: 100%;
+        //     object-fit: cover;
+       // }
+        .about_3_text{
+            position: relative;
+            color: #F9FFFE;
+            font-size: 32px;
+            letter-spacing: -0.64px;
+            margin: 55px 0 140px;
+            
+        }
+    }
+    .about3_row{
+        max-width: 1330px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        .about3_t1{
+            max-width: 580px;
+            width: 100%;
+            margin: 9px 0; 
+            color: #F9FFFE;
+            font-size: 20px;
+            text-align: left;
+        }
+       
+        .about3_title{
+            max-width: 894px;
+            width: 100%;
+            margin: 9px 0 32px; 
+            color: #F9FFFE;
+            font-size: 40px;
+            text-align: left;
+            font-weight: 200;
+            font-family: 'BlackProText';
+            text-transform: uppercase;
+            line-height: 58px;
+        }
+        .about3_t2{
+            max-width: 894px;
+            padding-right: 148px;
+            width: 100%;
+            margin: 32px 0; 
+            color: #C3C3C3;
+            font-size: 16px;
+            text-align: left;
+            line-height: 18px;
+        }
+        
+    }
+}
+@media(max-width: 1200px){
+    .about_2{
+        
+        overflow: hidden;
+        background-color: #c3c3c3;
+        padding: 32px  0 64px;
+        width: 100%;
+        position: relative;
+        .about_2_img1{
+            height: 88px;
+            width: 100%;
+            position: relative;
+            margin-bottom: 12px;
+            img{
+                left: 20px;
+                top: 0;
+                width: 133px;
+            }
+        }
+        .about_2_img2{
+           display: none;
+        }
+        .about_2_img2_mob{
+            width: 100%;
+            display: block;
+            position: relative;
+            bottom: 0;
+            left: 0;
+        }
+        .about2_row{
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            
+            .about2_row_wrapper{
+                max-width: 100%;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+    
+                .bigText{
+                    font-size: 24px;
+                    line-height: 38px;
+                    margin-bottom: 32px;
+                    
+                    .bigTextImg{
+                        position: relative;
+                        top: 3px;
+                        width: 50px;
+                    }
+                }
+                .about_text1{
+                    max-width: 100%;
+                    width: 100%;
+                    margin-right: 0;
+                   
+                }
+                .about_text2{
+                    max-width: 100%;
+                    width: 100%;
+                    margin-right: 0;
+                    
+                }
+            }
+           
+            
+        }
+    }
+
+    .about_3{
+        overflow: hidden;
+        padding: 148px 20px 82px;
+        .bgc{
+            position: relative;
+            height: 528px;
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+            background-image: url(../../../public/img/pair.png);
+            background-size: cover;
+            background-position: center;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .about_3_img1{
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 32px;
+            .about_3_abs{
+                position: absolute;
+                left: 0;
+                top: -56px;
+                width: 100px;
+            }
+            .about_3_sheap{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+            .about_3_text{
+                position: absolute;
+                right: 0;
+                color: #F9FFFE;
+                font-size: 16px;
+                letter-spacing: -0.64px;
+                margin: 0;
+                top: -29px;
+            }
+        }
+        .about3_row{
+            .about3_t1{
+                max-width: 894px;
+                width: 100%;
+                margin: 2px auto; 
+                color: #F9FFFE;
+                font-size: 20px;
+                text-align: left;
+                line-height: 22px;
+            }
+           
+            .about3_title{
+                max-width: 894px;
+                width: 100%;
+                margin: 9px auto 32px; 
+                color: #F9FFFE;
+                font-size: 26px;
+               
+                line-height: 30px;
+            }
+            .about3_t2{
+                max-width: 894px;
+                padding-right: 118px;
+                width: 100%;
+                margin: 32px auto; 
+                line-height: 18px;
+            }
+            
+        }
+    }
+}
+@media(max-width: 992px){
+    
+    .about_1{
+        background-image: none;
+        width: 100%;
+        position: relative;
+        padding-bottom: 0;
+        margin-top: 32px;
+        width: 100%;
+        position: relative;
+        .absImg{
+            width: 100%;
+            height: 398px;
+            display: block;
+            background-image: url('../../../public/img/aboutFon.webp');
+            background-size: cover;
+            background-position: -28px bottom; 
+        }
+        &_img{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+        .about1_row{
+            padding-left: 48px;
+            position: relative;
+            left: 0;
+            transform: translate(0, 0);
+            padding-top: 0;
+            max-width: 470px;
+            width: 100%;
+            text-align: left;
+            &_breadcrumb{
+                display: none;
+            }
+            .text{
+                max-width: 306px;
+                color: #C3C3C3;
+                font-size: 20px;
+                letter-spacing: -.4px;
+                padding-bottom: 6px;
+                padding-right: 30px;
+                margin-bottom: 52px;
+            }
+        }
+        .about_title_1{
+            margin-top: 34px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #F9FFFE;
+            text-align: left;
+            font-size: 32px;
+            left: 0;
+        }
+        .about_title_2{
+            margin-top: 14px;
+            margin-bottom: 36px;
+            text-transform: uppercase;
+            color: #F9FFFE;
+            text-align: left;
+           
+            font-size: 32px;
+            left: 0;
+            padding-left: 73px;
+            z-index: 10;
+        }
+        .about_ring_1{
+            width: 108px;
+            position: absolute;
+            left: 226px;
+            top: 18%;
+            transform: translate(0, -50%);
+        }
+    
+    }
+    .about_2{
+        .about_2_img1{
+           
+            
+                display: none;
+        }
+    }
+    .about_3{
+        .bgc{
+            position: relative;
+            height: 558px;
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+            background-image: url(../../../public/img/pair.png);
+            background-size: cover;
+            background-position: center;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+}

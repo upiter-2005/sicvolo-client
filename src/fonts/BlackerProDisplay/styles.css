@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Blacker Pro Text Condensed Medium Italic';
+  src: url(./Blacker+Pro+Text+Condensed+Medium+Italic.eot);
+  src: url(./Blacker+Pro+Text+Condensed+Medium+Italic.eot?#iefix) format('embedded-opentype'),
+       url(./Blacker+Pro+Text+Condensed+Medium+Italic.ttf) format('truetype'),
+       url(./Blacker+Pro+Text+Condensed+Medium+Italic.woff) format('woff');
+}

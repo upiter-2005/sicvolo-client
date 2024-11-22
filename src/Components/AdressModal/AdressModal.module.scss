@@ -1,0 +1,104 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition: all .3s ease;
+    z-index: 100;
+    &.active{
+        transform: scale(1);
+    }
+    &__content{
+        padding: 64px;
+        background: #004E41;
+        max-width: 656px;
+        width: 100%;
+        h2{
+            font-weight: 400;
+            font-size: 32px;
+            text-align: left;
+            margin-bottom: 48px;
+            margin-top: 0;
+        }
+        form{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: relative;
+            .closeModal{
+                position: absolute;
+                top: -88px;
+                right: 0px;
+                cursor: pointer;
+            }
+        }
+        .inputModalBox{
+            width: 47%;
+            margin-bottom: 40px;
+            
+            input{
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #C3C3C3;
+                padding-bottom: 13px;
+                color: #C3C3C3;
+                font-size: 16px;
+            }
+            select{
+                width: 100%;
+    
+            }
+        }
+        .saveBtn{
+            background-color: #F9FFFE;
+            border-radius: 4px;
+            padding: 16px;
+            color: #004E41;
+            font-size: 20px;
+            width: 100%;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+   
+   
+}
+
+
+@media(max-width: 992px ){
+    .modal{
+        &__content{
+            padding: 60px 32px;
+            h2{
+                font-weight: 400;
+                font-size: 28px;
+            }
+            form{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                position: relative;
+                
+                .closeModal{
+                    top: -130px;
+                }
+            }
+        }
+    }
+    
+}

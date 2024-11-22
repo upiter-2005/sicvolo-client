@@ -1,0 +1,67 @@
+.MnuMobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    padding: 32px 0;
+    margin: 0 auto;
+    transform: scale(0);
+    background-color: #000;
+    transition: all .3s ease;
+    &.activeMobMnu{
+        transform: scale(1);
+        
+    }
+    .close{
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+    ul{
+        height: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0 16px;
+        }
+        .logo{
+            margin-bottom: 36px;
+        }
+    }
+    .navLink{
+        font-size: 20px;
+        letter-spacing: -.4px;
+        color: #f9fffe;
+        position: relative;
+        display: inline-block;
+        padding: 10px 16px;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: all .8s ease;
+        }
+        &:hover::before{
+            content: url(../../../public/img/hoverEl.svg);
+            opacity: 1;
+            transition: all .8s ease;
+        }
+    }
+}
+
+@media(max-width: 840px){
+    
+ .mainNav{
+    display: none;
+ }
+    
+}

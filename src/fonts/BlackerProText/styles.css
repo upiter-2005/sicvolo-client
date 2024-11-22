@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Blacker Pro Text Light';
+  src: url(./Blacker+Pro+Text+Light.eot);
+  src: url(./Blacker+Pro+Text+Light.eot?#iefix) format('embedded-opentype'),
+       url(./Blacker+Pro+Text+Light.ttf) format('truetype'),
+       url(./Blacker+Pro+Text+Light.woff) format('woff');
+}
